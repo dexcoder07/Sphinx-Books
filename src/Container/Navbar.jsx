@@ -4,11 +4,12 @@ import SearchIcon from '@mui/icons-material/Search';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import Badge from '@mui/material/Badge';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 
 
 const Container = styled.div`
     height: 60px;
-    // background-color: orange;
+    // background-color: #e0ffcd;
 `;
 
 const Wrapper = styled.div`
@@ -72,7 +73,7 @@ const Navbar = () => {
                 <Left>
                     <Language>EN</Language>
                     <SearchContainer>
-                        <Input></Input>
+                        <Input/>
                     <SearchIcon></SearchIcon>
                     </SearchContainer>
                     
