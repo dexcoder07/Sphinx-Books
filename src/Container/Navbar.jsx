@@ -1,15 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import SearchIcon from '@mui/icons-material/Search';
-import AcUnitIcon from '@mui/icons-material/AcUnit';
+// import AcUnitIcon from '@mui/icons-material/AcUnit';
+import BlurLinearIcon from '@mui/icons-material/BlurLinear';
 import Badge from '@mui/material/Badge';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
+// import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 
 
 const Container = styled.div`
     height: 60px;
-    // background-color: #e0ffcd;
+    background-color: #B0E0E6;
 `;
 
 const Wrapper = styled.div`
@@ -20,50 +21,52 @@ const Wrapper = styled.div`
 `;
 
 const Left = styled.div`
-display: flex;
-flex: 1;
-align-items: center`;
+    display: flex;
+    flex: 1;
+    align-items: center
+`;
 
 const Center = styled.div`
-flex: 1;
-text-align: center;
+    flex: 1;
+    text-align: center;
 `;
 
 const Right = styled.div`
-display: flex;
-align-items: center;
-justify-content: flex-end;
-flex: 1`;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1
+`;
 
 
 const Language = styled.div`
-font-size: 16px;
-cursor: pointer;
+    font-size: 16px;
+    cursor: pointer;
 `;
 
 const SearchContainer = styled.div`
-border: 1px solid lightgray;
-display: flex;
-align-items: center;
-margin-left: 25px;
-padding: 5px;
-// border: 3px solid black;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 5px;
+    // border: 3px solid black;
 `;
 
 
 const Input = styled.input`
-flex: 1;
-border: none;
+    flex: 1;
+    border: none;
 `
 
 const Logo = styled.h1`
-font-weight: bold;
+    font-weight: bold;
 `;
 
 const MenuItem = styled.div`
-font-size: 14;
-cursor: pointer;
-margin-left: 25px;
+    font-size: 14;
+    cursor: pointer;
+    margin-left: 25px;
 `;
 
 const Navbar = () => {
@@ -74,11 +77,11 @@ const Navbar = () => {
                     <Language>EN</Language>
                     <SearchContainer>
                         <Input/>
-                    <SearchIcon></SearchIcon>
+                    <SearchIcon style={{color:"grey", fontSize: 16}}></SearchIcon>
                     </SearchContainer>
                     
                 </Left>
-                <Center><Logo><AcUnitIcon></AcUnitIcon>ShopLess</Logo></Center>
+                <Center><Logo><BlurLinearIcon></BlurLinearIcon>Sphinx</Logo></Center>
                 <Right>
                     <MenuItem>Register</MenuItem>
                     <MenuItem>Login</MenuItem>
